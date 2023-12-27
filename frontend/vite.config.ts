@@ -3,10 +3,9 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  server:{
+  server: {
     port: 3000,
-    hmr:false,
+    hmr: false,
   },
   plugins: [react()],
-
 })
