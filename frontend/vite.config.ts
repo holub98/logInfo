@@ -5,7 +5,10 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   server: {
     port: 3000,
-    hmr: false,
+    hmr: true,
+    watch: {
+      usePolling: true,
+    },
   },
   plugins: [react()],
 })
