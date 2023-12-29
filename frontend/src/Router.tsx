@@ -1,4 +1,7 @@
 import type { RouteObject } from 'react-router-dom'
-import HomePage from './View/HomePage/HomePage'
+import { HomePage, LoginPage } from './View'
 
-export const routes: RouteObject[] = [{ path: '/', element: <HomePage /> }]
+export const routes: RouteObject[] = [
+  { path: '/', element: <HomePage /> },
+  { path: '/login', element: <LoginPage /> },
+]
