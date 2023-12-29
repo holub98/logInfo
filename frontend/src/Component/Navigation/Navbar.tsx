@@ -2,7 +2,6 @@ import { blue, gold } from '@ant-design/colors'
 import { Flex, Typography } from 'antd'
 import { Link } from 'react-router-dom'
 
-console.log(blue[4])
 export const Navbar = () => {
   return (
     <Flex
@@ -11,7 +10,7 @@ export const Navbar = () => {
       style={{
         padding: '8px 32px 8px 32px',
         background: blue[4],
-        height: '38px',
+        height: '60px',
       }}
     >
       <img src="logo-app.png" style={{ width: '120px' }} />

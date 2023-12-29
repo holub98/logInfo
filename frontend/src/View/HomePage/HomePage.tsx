@@ -1,12 +1,9 @@
-import { Navbar } from '../../Component/Navigation'
-
-const Component = () => {
+const HomePage = () => {
   return (
     <>
-      <Navbar />
       <div>Main page home</div>
     </>
   )
 }
 
-export default Component
+export default HomePage
