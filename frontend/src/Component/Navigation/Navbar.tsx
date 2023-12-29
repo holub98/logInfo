@@ -1,76 +1,65 @@
-import { blue, gold } from '@ant-design/colors'
-import { Flex, Typography } from 'antd'
+import { Button, Stack } from '@mui/material'
+import { blue } from '@mui/material/colors'
 import { Link } from 'react-router-dom'
 
 export const Navbar = () => {
   return (
-    <Flex
-      align="center"
-      justify="space-between"
+    <Stack
+      direction="row"
       style={{
-        padding: '8px 32px 8px 32px',
-        background: blue[4],
         height: '60px',
+        background: `${blue[500]}`,
+        paddingLeft: '64px',
+        paddingRight: '64px',
       }}
+      alignItems="center"
+      justifyContent="space-between"
     >
-      <img src="logo-app.png" style={{ width: '120px' }} />
-      <Flex gap="32px">
-        <Link to="/">
-          <Typography.Title
-            style={{
-              fontSize: 'large',
-              fontWeight: 'bold',
-              color: gold[0],
-            }}
-          >
-            Messages
-          </Typography.Title>
-        </Link>
-        <Link to="/">
-          <Typography.Title
-            style={{
-              fontSize: 'large',
-              fontWeight: 'bold',
-              color: gold[0],
-            }}
-          >
-            Marks
-          </Typography.Title>
-        </Link>
-        <Link to="/">
-          <Typography.Title
-            style={{
-              fontSize: 'large',
-              fontWeight: 'bold',
-              color: gold[0],
-            }}
-          >
-            Attentions
-          </Typography.Title>
-        </Link>
-        <Link to="/">
-          <Typography.Title
-            style={{
-              fontSize: 'large',
-              fontWeight: 'bold',
-              color: gold[0],
-            }}
-          >
-            Time Table
-          </Typography.Title>
-        </Link>
-        <Link to="/">
-          <Typography.Title
-            style={{
-              fontSize: 'large',
-              fontWeight: 'bold',
-              color: gold[0],
-            }}
-          >
-            Login
-          </Typography.Title>
-        </Link>
-      </Flex>
-    </Flex>
+      <Link to="/">
+        <img src="logo-app.png" style={{ width: '120px' }} />
+      </Link>
+      <Stack direction="row" gap={3}>
+        <Button
+          variant="text"
+          href="/"
+          size="large"
+          sx={{ fontWeight: 'bold', color: `${blue[50]}` }}
+        >
+          Messages
+        </Button>
+        <Button
+          variant="text"
+          href="/"
+          size="large"
+          sx={{ fontWeight: 'bold', color: `${blue[50]}` }}
+        >
+          Marks
+        </Button>
+        <Button
+          variant="text"
+          href="/"
+          size="large"
+          sx={{ fontWeight: 'bold', color: `${blue[50]}` }}
+        >
+          Attentions
+        </Button>
+        <Button
+          variant="text"
+          href="/"
+          size="large"
+          sx={{ fontWeight: 'bold', color: `${blue[50]}` }}
+        >
+          Time Table
+        </Button>
+        <Button
+          variant="text"
+          href="/"
+          size="large"
+          sx={{ fontWeight: 'bold', color: `${blue[50]}` }}
+        >
+          Login
+        </Button>
+      </Stack>
+    </Stack>
   )
 }

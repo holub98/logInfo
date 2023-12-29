@@ -1,14 +1,16 @@
 import { ReactNode } from 'react'
 import { Navbar } from '../Navigation'
-import { Layout } from 'antd'
+import { Box, Stack } from '@mui/material'
 
 type Props = { children: ReactNode }
 
 export const LayoutView = ({ children }: Props) => {
   return (
-    <Layout>
+    <Stack height="100vh">
       <Navbar />
-      <Layout style={{ height: 'calc(100vh - 60px)' }}>{children}</Layout>
-    </Layout>
+      <Box flex={1} style={{ padding: '64px' }}>
+        {children}
+      </Box>
+    </Stack>
   )
 }
