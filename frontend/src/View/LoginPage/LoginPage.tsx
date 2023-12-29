@@ -4,7 +4,10 @@ import { cyan } from '@mui/material/colors'
 
 export const LoginPage = () => {
   return (
-    <Paper elevation={3} sx={{ height: '100%', display: 'flex' }}>
+    <Paper
+      elevation={3}
+      sx={{ height: '100%', display: 'flex', marginBottom: '64px' }}
+    >
       <Stack
         sx={{
           width: '100%',
