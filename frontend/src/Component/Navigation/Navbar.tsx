@@ -7,7 +7,7 @@ export const Navbar = () => {
     <Stack
       direction="row"
       style={{
-        height: '60px',
+        minHeight: '60px',
         background: `${blue[500]}`,
         paddingLeft: '64px',
         paddingRight: '64px',
@@ -16,7 +16,7 @@ export const Navbar = () => {
       justifyContent="space-between"
     >
       <Link to="/">
-        <img src="logo-app.png" style={{ width: '120px' }} />
+        <img src="/logo-app.png" style={{ width: '120px' }} />
       </Link>
       <Stack direction="row" gap={3}>
         <Button
