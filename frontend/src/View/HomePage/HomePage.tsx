@@ -16,7 +16,7 @@ export const HomePage = () => {
     setPage(value)
   }
   const count = Math.round(articles.length / 12)
-  console.log(page)
+
   return (
     <Grid container item spacing={6}>
       {articles.map((it) => {
