@@ -1,0 +1,12 @@
+[
+  { "id": 1, "name": "French", "type": "science" },
+  { "id": 2, "name": "Mathematics", "type": "other" },
+  { "id": 3, "name": "Art", "type": "other" },
+  { "id": 4, "name": "Economics", "type": "science" },
+  { "id": 5, "name": "Geography", "type": "other" },
+  { "id": 6, "name": "History", "type": "science" },
+  { "id": 7, "name": "Music", "type": "science" },
+  { "id": 8, "name": "Political Science", "type": "science" },
+  { "id": 9, "name": "Spanish", "type": "science" },
+  { "id": 10, "name": "Science", "type": "other" }
+]
